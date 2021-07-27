@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AppMenu  from './AppMenu';
 
 const Imc = () => {
 
@@ -13,6 +14,7 @@ const Imc = () => {
 
   return (
     <>
+      <AppMenu selectedKey='2'/>
       <h2>IMC</h2>
       <form>
         <div>

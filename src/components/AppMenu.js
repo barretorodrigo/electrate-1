@@ -5,30 +5,39 @@ import {
   CalculatorOutlined,
   UnorderedListOutlined
 } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
-const AppMenu = () => {
+const AppMenu = ({selectedKey}) => {
   return (
     <>
-      <Menu mode="horizontal" defaultSelectedKeys={['1']} theme={'dark'}>
+      <Menu mode="horizontal" defaultSelectedKeys={[selectedKey]} theme={'dark'}>
+
         <Menu.Item
           key="1"
           icon={<CalculatorOutlined />}
         >
-          Calculadora
+          <Link to="/">
+            Calculadora
+          </Link>
         </Menu.Item>
+
 
         <Menu.Item
           key="2"
           icon={<BarChartOutlined />}
         >
-          IMC
+          <Link to="/imc">
+            IMC
+          </Link>
         </Menu.Item>
 
         <Menu.Item
           key="3"
           icon={<UnorderedListOutlined />}
         >
-          ToDo
+          <Link to="/todo">
+            ToDo
+          </Link>
         </Menu.Item>
 
       </Menu>

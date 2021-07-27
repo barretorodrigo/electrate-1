@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AppMenu from './AppMenu';
 
 const Calc = () => {
 
@@ -13,6 +14,7 @@ const Calc = () => {
 
   return (
     <>
+      <AppMenu selectedKey='1' />
       <h2>Calculadora</h2>
       <form>
         <div>
